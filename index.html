@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -23,18 +22,23 @@
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
 <body>
   <div class="chat-container">
-    <script src="https://cdn.jsdelivr.net/npm/@n8n/chat@latest" defer
-      data-endpoint="https://priscillaufpa.app.n8n.cloud/webhook/5269ae78-eeda-4f97-942e-0fcf2be073a9/chat"
-      data-title="Consultor de Carros 🚗"
-      data-description="Fale comigo e receba sugestões automotivas personalizadas!"
-      data-theme="light"
-      data-chat-style="border-radius: 10px;">
-    </script>
+    <iframe 
+      src="https://priscillaufpa.app.n8n.cloud/webhook/5269ae78-eeda-4f97-942e-0fcf2be073a9/chat"
+      title="Chat do Consultor de Carros"
+      allow="clipboard-write"
+    ></iframe>
   </div>
 </body>
 </html>
