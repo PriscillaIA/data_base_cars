@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultor de Carros</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Auto_Sketch_by_Jean_Loic_Wikimedia_Commons.jpg/1024px-Auto_Sketch_by_Jean_Loic_Wikimedia_Commons.jpg') center/cover no-repeat;
+      backdrop-filter: blur(3px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .chat-container {
+      width: 400px;
+      height: 600px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <n8n-chat></n8n-chat>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@n8n/chat@latest" defer
+    data-endpoint="https://priscillaufpa.app.n8n.cloud/webhook/5269ae78-eeda-4f97-942e-0fcf2be073a9/chat"
+    data-title="Consultor de Carros 🚗"
+    data-description="Fale comigo e receba sugestões automotivas personalizadas!"
+    data-theme="light"
+    data-chat-style="border-radius: 10px;">
+  </script>
+</body>
+</html>
