@@ -10,17 +10,15 @@
       font-family: sans-serif;
       background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Auto_Sketch_by_Jean_Loic_Wikimedia_Commons.jpg/1024px-Auto_Sketch_by_Jean_Loic_Wikimedia_Commons.jpg') center/cover no-repeat;
       backdrop-filter: blur(3px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 100vh;
     }
-
-    n8n-chat {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      max-width: 400px;
-      width: 100%;
+    .chat-container {
+      width: 400px;
       height: 600px;
+      background: rgba(255, 255, 255, 0.9);
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 4px 20px rgba(0,0,0,0.2);
@@ -28,14 +26,14 @@
   </style>
 </head>
 <body>
-
-  <script src="https://cdn.jsdelivr.net/npm/@n8n/chat@latest" defer
-    data-endpoint="https://priscillaufpa.app.n8n.cloud/webhook/5269ae78-eeda-4f97-942e-0fcf2be073a9/chat"
-    data-title="Consultor de Carros 🚗"
-    data-description="Fale comigo e receba sugestões automotivas personalizadas!"
-    data-theme="light"
-    data-chat-style="border-radius: 10px;">
-  </script>
-
+  <div class="chat-container">
+    <script src="https://cdn.jsdelivr.net/npm/@n8n/chat@latest" defer
+      data-endpoint="https://priscillaufpa.app.n8n.cloud/webhook/5269ae78-eeda-4f97-942e-0fcf2be073a9/chat"
+      data-title="Consultor de Carros 🚗"
+      data-description="Fale comigo e receba sugestões automotivas personalizadas!"
+      data-theme="light"
+      data-chat-style="border-radius: 10px;">
+    </script>
+  </div>
 </body>
 </html>
